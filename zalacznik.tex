@@ -1,30 +1,58 @@
+% \documentclass{article}
+% \usepackage[polish]{babel}
+% \usepackage[OT4]{polski}
+% \usepackage[cp1250]{inputenc}
+% \usepackage{xcolor,listings}
+% \begin{document}
+
 \section{Kod Ÿród³owy}
 
 \subsection{Ruby}
 
-\begin{lstlisting}[language=Ruby]
+\lstloadlanguages{Ruby}
+\lstset{
+basicstyle=\ttfamily\color{black},
+commentstyle = \ttfamily\color{red},
+keywordstyle=\ttfamily\color{blue},
+stringstyle=\ttfamily\color{orange},
+language=Ruby,}
 
-#this is a comment
+\lstinputlisting[
+	caption=Downloader.rbw,
+	firstnumber=1,]
+	{../PracaInz-Program/Downloader.rbw}
 
-a = 5
-b = a * 5
-puts b
-puts b + 3
+\newpage
+\lstinputlisting[
+	caption=Etl.rb]
+	{../PracaInz-Program/Etl.rb}
 
-class Test < Test::SomeClass
-@test = 3
-    def bar
-        if foo
-            puts "foo"
-        else
-            puts "bar"
-        end
-    end
-end
-\end{lstlisting}
+\newpage
+\lstinputlisting[
+	caption=MapReduce.rb]
+	{../PracaInz-Program/MapReduce.rb}
 
+\newpage
+\lstinputlisting[
+	caption=MovieHasher.rb]
+	{../PracaInz-Program/MovieHasher.rb}
 
+% \begin{lstlisting}[
+%     label=listing:RubyTest,
+%     float=h,
+%     caption=test.rb,
+%     firstnumber=1,
+%     language=Ruby,
+%     basicstyle=\ttfamily,
+%     keywordstyle=\color{red},
+%     stringstyle=\color{blue},
+% ]
+% \end{lstlisting}
+
+\newpage
 \subsection{MongoDB}
 
+\newpage
 \section{else ??}
 
+% \end{document}
